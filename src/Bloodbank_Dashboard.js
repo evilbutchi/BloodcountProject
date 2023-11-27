@@ -60,7 +60,7 @@ const BloodbankDashboard = () => {
         <div className="Navigation" style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', top: '20%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 0 }}>
         <div className="Home" style={{color: '#FF0000', fontSize: 18, fontFamily: 'Poppins', fontWeight: '500', textTransform: 'capitalize', letterSpacing: 0.90, wordWrap: 'break-word'}}>home</div>
           <div className="AvailableDonors" style={{color: 'black', fontSize: 18, fontFamily: 'Poppins', fontWeight: '500',
-           textTransform: 'capitalize', letterSpacing: 0.90, wordWrap: 'break-word'}}onClick={() => navigate("/available-donors")}>Available Donors</div>
+           textTransform: 'capitalize', letterSpacing: 0.90, wordWrap: 'break-word'}}onClick={() => navigate("/Available_Donors")}>Available Donors</div>
         </div>
         
         {/* Buttons with increased marginRight */}
@@ -120,7 +120,7 @@ const BloodbankDashboard = () => {
       {/* Rest of the content */}
       <div className="Content" style={{ marginTop: 20, marginLeft: -750, marginRight: 20 }}>
   {/* Cebu Doctors' University Hospital */}
-  <div style={{ position: 'relative', textAlign: 'center', marginTop: 20 }} onClick={() => navigate("/bloodbank_hospital-information")}>
+  <div style={{ position: 'relative', textAlign: 'center', marginTop: 20 }} onClick={() => navigate("/Bloodbank_HospitalInformation")}>
     <img
       className="Image5"
       src={Image5}
