@@ -11,7 +11,7 @@ const BloodbankHospitalInformation = () => {
   const navigate = useNavigate();
 
   
-  
+ 
 
   const Header = () => {
     return (
@@ -46,7 +46,7 @@ const BloodbankHospitalInformation = () => {
 
 
   const Label = () => {
-
+    
     
     return (
         <div className="label" style={{ position: 'absolute', right: '0', left: '120%', top: '40%', transform: 'translate(-50%, -50%)', textAlign: 'center', zIndex: 2 }}>
@@ -54,7 +54,12 @@ const BloodbankHospitalInformation = () => {
   <img className="polygon-above-image" src={require('./Polygon 1.svg').default} alt="Polygon 1" />
   <div className="text-wrapper" style={{ position: 'absolute', top: '20%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1 }}>
     {/* Removed the specific content */}
-    <div style={{ position: 'relative', marginLeft: '10%', marginTop: '-10%' }}>
+    <div className="Frame1198" style={{position: 'absolute',zIndex: 2, width: 166, height: 33, padding: 10, background: '#FF1515', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex', marginTop: -130,marginLeft: 225, cursor: 'pointer' }} onClick={() => alert('SUCCESS! Request to make a Blood request has been confirmed!')}>
+  <div className="Request" style={{ textAlign: 'center', color: 'white', fontSize: 18, fontFamily: 'Poppins', fontWeight: '600', letterSpacing: 0.90, wordWrap: 'break-word' }}>Request</div>
+</div>
+    {/* Request button */}
+    
+<div style={{ position: 'relative', marginLeft: '10%', marginTop: '-10%' }}>
       <div className="Rectangle60" style={{ width: 532, height: 280, background: '#F8EDED', borderRadius: 25, position: 'relative', marginLeft: '30%', marginTop: '-70%' }}>
         {/* Make a Blood Request */}
         <div className="MakeABloodRequest" style={{ position: 'absolute', left: '30%', top: '10%', transform: 'translate(-50%, -50%)', width: 200, height: 41, textAlign: 'right', color: '#FF0000', fontSize: 22, fontFamily: 'Poppins', fontWeight: '700', wordWrap: 'break-word' }}>
@@ -94,6 +99,8 @@ const BloodbankHospitalInformation = () => {
       style={{ width: 237, height: 31, background: 'white', borderRadius: 100, border: '1px #FFC3C3 solid', position: 'absolute', marginTop: '-122px', left: '110%', transform: 'translate(-50%, -50%)', textAlign: 'center' }}
     />
   </div>
+
+ 
 
   <div className="subtext-wrapper" style={{ position: 'relative', zIndex: 1 }}> </div>
 </div>
@@ -270,3 +277,4 @@ const BloodbankHospitalInformation = () => {
  
 
 export default BloodbankHospitalInformation;
+
