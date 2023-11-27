@@ -12,6 +12,9 @@ import LoginHospitalPersonnel from './Login_HospitalPersonnel';
 import Service from './Service';
 import DonorDetails from './Donor_Details';
 import RecipientDashboard from './Recipient_Dashboard';
+import BloodbankDashboard from './Bloodbank_Dashboard';
+import BloodbankHospitalInformation from './Bloodbank_HospitalInformation';
+
 
 const Box = () => {
   return (
@@ -95,9 +98,11 @@ function App() {
         <Route path="/Login_HospitalPersonnel" element={<LoginHospitalPersonnel />} />
         <Route path="/Service" element={<Service />} />
         <Route path="/Recipient_Dashboard" element={<RecipientDashboard />} />
+        <Route path="/Bloodbank_Dashboard" element={<BloodbankDashboard />} />
         <Route path="/Donor_Details" element={<DonorDetails />} />
         <Route path="/Register_User" element={<RegisterUser />} />
         <Route path="/Login_User" element={<LoginUser />} />
+        <Route path="/Bloodbank_HospitalInformation" element={<BloodbankHospitalInformation/>} />
       </Routes>
     </Router>
   );
